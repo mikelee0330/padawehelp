@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array練習</title>
+    <script>
+        let grades=[20,39,49];
+        grades.push(43);
+        console.log("陣列長度:",grades.length);
+        //利用 for 迴圈，逐一取得陣列中的資料
+        //算平均數，算總和
+        let total=0;
+        for(let i=0;i<grades.length;i++){
+            console.log(grades[i]);
+            total=total+grades[i];
+        };
+        let avg=total/grades.length;
+        console.log("陣列中數字平均數:",avg);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

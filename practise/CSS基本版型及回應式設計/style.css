@@ -1,0 +1,47 @@
+body{
+	margin: 0px;
+}
+/*nav樣式*/
+nav{
+	display: flex;
+}
+nav>.logo{
+	/*沒有彈性，固定尺寸*/
+	flex: none;width: 100px;
+	background-color: #ffcccc;
+}
+
+nav>.menu{
+	/*儘量把容器的空間張滿*/
+	flex: auto;
+	background-color: #ccccff;
+}
+nav>.user{
+	flex: none;width: 100px;
+	background-color: #ccffcc;
+}
+/*	main樣式設定 */
+main{  /* 容器 */
+	display: flex;
+	flex-wrap: wrap;/*flex-wrap換行*/
+	/*水平對齊 >靠左justify-content: flex-star;靠右 flex-end */
+	justify-content: center;
+	/*垂直對齊 >預設延展:stretch ;靠上:: flex-start ;制中:center */
+	/**align-items: center;**/
+
+	background-color: #cccccc;
+}
+main>.item{ /*項目*/
+	/*flex:none不能隨意縮放*/
+	flex: none;
+	width: 270px;margin: 10px;
+	background-color: #ffcccc;
+}
+
+@media (max-width: 1200px) {
+	main>.item:45%;
+}
+
+@media (max-width: 500px) {
+	main>.item:90%;
+}

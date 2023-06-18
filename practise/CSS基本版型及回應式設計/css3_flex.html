@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<link  href="style.css" rel="stylesheet" type="text/css" media="all" />
+	<title>CSS3 Flexbox練習</title>
+</head>
+<body>
+	<!-- <nav style="display:none;"> 拿掉不顯示-->
+	<nav>	
+		<div class="logo">Long</div>
+		<div class="menu">Menu</div>
+		<div class="user">User</div>
+	</nav>
+	<!-- 解決Flex如何解決:並排(切欄)、水平對齊、垂直對齊的問題-->
+	<!--
+		RWD回應式設計的關鍵動作:欄未變化
+		FLEX如何控制欄位的變化?
+		例如:4欄>2欄>1欄
+
+		規劃:
+		1200px以上4欄固定尺寸
+		500px~1200px 2欄 彈性尺寸
+		500px以下 1欄 彈性尺寸
+	-->
+	<main>
+		<div class="item">News 1</div>
+		<div class="item">News 2</div>
+		<div class="item">News 3</div>
+		<div class="item">News 4</div>
+	</main>
+</body>
+
+</html>

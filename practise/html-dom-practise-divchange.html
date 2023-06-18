@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML DOM DIV change畫面操作練習</title>
+</head>
+<body>
+    <div>
+        <span onclick="changeToAbout();">關於我</span>
+        <span onclick="changeToExps();">學經歷</span>
+    </div>
+    <hr/>
+    <div id="about">大家好，我是麥大</div>
+    <div id="exps" style="display: none;">我是工業設計畢業，後來開網路行銷公司和系統開發公司</div>
+    <script>
+        function changeToAbout(){
+            let aboutDiv=document.querySelector("#about");
+            let expsDiv=document.querySelector("#exps");
+            aboutDiv.style.display="block";
+            expsDiv.style.display="none";
+            
+        }
+        function changeToExps(){
+            let aboutDiv=document.querySelector("#about");
+            let expsDiv=document.querySelector("#exps");
+            aboutDiv.style.display="none";
+            expsDiv.style.display="block";
+        }
+    </script>
+</body>
+</html>

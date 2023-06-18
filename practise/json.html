@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>json練習</title>
+    <script>
+        let point={
+            "x":3,
+            "y":4,
+            "get":function(){
+                alert(this.x+","+this.y);
+            }
+    }
+    //console.log(point);
+    /*
+        物件結構與 JSON 格式字串轉換，使用內建 JSON 物件中的方法。
+        使用 JSON.stringify(物件)；將物件轉換成 JSON 格式的字串，但會忽略函式的部分
+        使用 JSON.parse(JSON 格式字串)；將字串轉換成物件結構
+    */
+   let jsonStr=JSON.stringify(point); //轉換為字串
+   console.log("專換為字串:",jsonStr);
+   let plainObj=JSON.parse(jsonStr); //轉換回物件結構
+   console.log("專換為物件結構:",plainObj);
+   alert(plainObj.x);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

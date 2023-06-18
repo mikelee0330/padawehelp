@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<title>Document</title>
+</head>
+<body>
+	接著，來體驗一下 「 emmet 」外掛的好用之處吧~
+
+直接打上 「html:5」 (或是「!」也可以喔)，然後按[Tab]鍵做轉換:
+<div style="padding:10px">* 小提醒 : 假如想要外部附加 CSS 樣式表，也可以利用 「 link:css」 + [ Tab ] 鍵 :</div>
+
+<h3>參考連結</h3>
+<hr />
+
+<a href="https://ithelp.ithome.com.tw/articles/10159247">參考連結-如何透過Sublime text 3 plugin打造Sass開發環境</a>
+
+html:5     //展開html5的格式<br>
+link:css   //插入一個CSS連結<br>
+script:src //插入一個javscript<br>
+p*3        //三個P段落<br>
+<div>下面這段要看原始碼</div>
+h1+p       // 會編譯成<h1></h1><p></p>
+h1>a       // 會編譯成<h1><a href="#"></a></h1>
+a[href='http://xxx.com'] //在html tag裡面寫屬性
+.box    // 展開為 <div class="box"></div>
+
+
+.box > ul >li*3 >a     //會編譯成下列程式碼：
+<div class="box">
+    <ul>
+        <li><a href="">1</a></li>
+        <li><a href="">2</a></li>
+        <li><a href="">3</a></li>
+    </ul>
+</div>
+
+</body>
+</html>

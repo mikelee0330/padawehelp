@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>自動排程 練習</title>
+	<script type="text/javascript">
+		var timer;
+		function init(){
+			timer=document.getElementById("timer");
+			window.setInterval(countdown,1000);
+		}
+		function countdown(){
+			timer.innerHTML=timer.innerHTML-1;
+			if(timer.innerHTML<=0){
+				//alert("時間結束");
+				document.location="https://www.google.com";
+			}
+		}
+	</script>
+
+</head>
+
+<body onload="init();">
+	<span id="timer">3</span>
+</body>
+</html>
